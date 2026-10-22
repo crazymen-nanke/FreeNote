@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="dialog_positive" type="id" />
+    <item name="dialog_cancel" type="id" />
+    <!-- 月历格子上挂的时间戳，供交互测试定位具体某一天 -->
+    <item name="tag_day" type="id" />
+</resources>

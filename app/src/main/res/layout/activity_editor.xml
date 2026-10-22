@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context=".ui.EditorActivity">
+
+    <!-- 编辑导航 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/screen_padding"
+        android:paddingTop="12dp"
+        android:paddingRight="@dimen/screen_padding">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            style="@style/Widget.FreeNote.IconButton"
+            android:contentDescription="@string/action_back"
+            android:src="@drawable/ic_back"
+            android:tint="@color/ink" />
+
+        <TextView
+            android:id="@+id/tvDraft"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/draft_saved"
+            android:textAppearance="@style/TextAppearance.FreeNote.Meta" />
+
+        <TextView
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@drawable/bg_btn_primary"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:minWidth="72dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="@string/action_save"
+            android:textColor="@color/on_primary"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/screen_padding"
+            android:paddingTop="16dp"
+            android:paddingRight="@dimen/screen_padding"
+            android:paddingBottom="24dp">
+
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:fontFamily="serif"
+                android:hint="@string/editor_title_hint"
+                android:inputType="textCapSentences"
+                android:maxLines="2"
+                android:padding="0dp"
+                android:textColor="@color/ink"
+                android:textColorHint="@color/text_ghost"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvMeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:letterSpacing="0.02"
+                android:textAppearance="@style/TextAppearance.FreeNote.Meta"
+                tools:text="10月22日 星期四 · 14:32" />
+
+            <EditText
+                android:id="@+id/etBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@null"
+                android:fontFamily="sans-serif"
+                android:gravity="top"
+                android:hint="@string/editor_body_hint"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lineSpacingExtra="13sp"
+                android:minLines="8"
+                android:padding="0dp"
+                android:textColor="@color/ink_body"
+                android:textColorHint="@color/text_ghost"
+                android:textSize="15sp" />
+
+            <HorizontalScrollView
+                android:id="@+id/photoScroller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:id="@+id/photoRow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+
+            <LinearLayout
+                android:id="@+id/tagRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_check_circle"
+                    android:tint="@color/primary_light" />
+
+                <TextView
+                    android:id="@+id/tvAutosave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="6dp"
+                    android:letterSpacing="0.02"
+                    android:textAppearance="@style/TextAppearance.FreeNote.Caption"
+                    tools:text="已自动保存 · 168 字" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <!-- 编辑工具栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/surface"
+        android:elevation="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <FrameLayout
+            android:id="@+id/toolText"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_icon_btn_soft"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_text"
+                android:tint="@color/primary" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/toolList"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_list"
+                android:tint="@color/text_secondary" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/toolPhoto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_image"
+                android:tint="@color/text_secondary" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/btnDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/action_delete"
+                android:src="@drawable/ic_trash"
+                android:tint="@color/text_secondary" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">随心记</string>
+    <string name="tab_today">今日</string>
+    <string name="tab_timeline">时光</string>
+    <string name="tab_profile">我的</string>
+
+    <string name="capture_hint">此刻，想记下什么？</string>
+    <string name="action_record">记录</string>
+    <string name="action_save">保存</string>
+    <string name="action_back">返回</string>
+    <string name="action_delete">删除这条记录</string>
+    <string name="action_add_photo">添加配图</string>
+    <string name="cd_remove_photo">移除配图</string>
+
+    <string name="title_today">今日</string>
+    <string name="title_timeline">时光</string>
+    <string name="title_write">写记录</string>
+
+    <string name="editor_title_hint">标题</string>
+    <string name="editor_body_hint">写下此刻看到的、想到的……</string>
+    <string name="draft_saved">草稿 · 自动保存</string>
+
+    <string name="empty_today">今天还没有记录。写一句，就算数。</string>
+    <string name="empty_timeline">这个月还没有记录。</string>
+
+    <string name="cd_avatar">个人头像</string>
+    <string name="cd_photo">配图，点开可放大</string>
+    <string name="cd_add_tag">添加标签</string>
+    <string name="cd_more">更多</string>
+    <string name="cd_search">搜索</string>
+    <string name="cd_camera">拍照</string>
+    <string name="cd_tag">标签</string>
+    <string name="cd_pick_date">选择日期</string>
+    <string name="cd_prev_month">上个月</string>
+    <string name="cd_next_month">下个月</string>
+    <string name="cd_prev_year">上一年</string>
+    <string name="cd_next_year">下一年</string>
+
+    <!-- 月历选日 -->
+    <string name="calendar_title">选择日期</string>
+    <string name="calendar_hint">有记录的日子带小圆点</string>
+    <string name="calendar_today">回到今天</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_jump_day">换一天</string>
+    <string name="search_hint">搜标题、正文或标签</string>
+    <string name="search_cancel">取消</string>
+
+    <!-- 本周回顾 -->
+    <string name="report_title">本周回顾</string>
+    <string name="report_notes">条记录</string>
+    <string name="report_days">记录天数</string>
+    <string name="report_words">写下的字</string>
+    <string name="report_chart_hint">点一下柱子，看那天写了多少</string>
+    <string name="report_another">换一句</string>
+    <string name="report_browse">看看这周</string>
+    <string name="report_write">写一条</string>
+
+    <!-- 记录详情页 -->
+    <string name="detail_edit">编辑</string>
+    <string name="detail_more">更多操作</string>
+    <string name="detail_sign">—— 随心记</string>
+    <string name="detail_words">%d 字</string>
+    <string name="detail_photo_count">共 %d 张 · 点开可放大</string>
+    <string name="detail_empty_body">这条记录只留下了图片。</string>
+    <string name="detail_empty_note">（没有正文）</string>
+    <string name="detail_deleted">已删除</string>
+    <string name="detail_action_delete">删除这条记录</string>
+    <string name="detail_action_edit">编辑内容</string>
+
+    <!-- 图片全屏查看 -->
+    <string name="viewer_counter">%1$d / %2$d</string>
+    <string name="viewer_hint">双指缩放 · 双击放大 · 左右滑动切换</string>
+    <string name="cd_close">关闭</string>
+
+    <!-- 提醒 -->
+    <string name="remind_title">记录提醒</string>
+    <string name="remind_subtitle">每天到这个时间，轻轻提醒你写一句</string>
+    <string name="remind_switch">开启提醒</string>
+    <string name="remind_off">未开启</string>
+    <string name="remind_daily">每天 %s</string>
+    <string name="remind_saved">已设置 %s 提醒</string>
+    <string name="remind_closed">已关闭提醒</string>
+    <string name="remind_blocked">提醒已开启，但系统通知被关闭了，去系统设置里允许「随心记」通知才能收到。</string>
+
+    <!-- 配图入口 -->
+    <string name="photo_pick_title">添加配图</string>
+    <string name="photo_capture">拍一张照片</string>
+    <string name="photo_gallery">从相册选择</string>
+</resources>

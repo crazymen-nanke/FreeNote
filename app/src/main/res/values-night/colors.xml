@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ============ 随心记 · 设计令牌（深色 / 暖黑） ============ -->
+    <color name="bg">#FF171511</color>
+    <color name="surface">#FF23201B</color>
+    <color name="surface_alt">#FF1E1B16</color>
+
+    <color name="ink">#FFF4EFE7</color>
+    <color name="ink_body">#FFE7E0D5</color>
+    <color name="text_secondary">#FFA8A096</color>
+    <color name="text_tertiary">#FF8B8378</color>
+    <color name="text_quaternary">#FF7C756B</color>
+    <color name="text_ghost">#FF6F6862</color>
+
+    <color name="primary">#FF9EBB8B</color>
+    <color name="primary_soft">#FF2A3328</color>
+    <color name="primary_light">#FFB9CDA6</color>
+    <color name="on_primary">#FF171511</color>
+
+    <color name="clay">#FFDCA98F</color>
+    <color name="clay_soft">#FF3A2B25</color>
+    <color name="clay_deep">#FFDCA98F</color>
+    <color name="gold">#FFD4A574</color>
+    <color name="sand">#FF2C2A24</color>
+
+    <color name="danger">#FFDCA98F</color>
+    <color name="on_danger">#FF171511</color>
+
+    <color name="divider">#FF2E2A23</color>
+    <color name="stroke">#FF322D26</color>
+    <color name="stroke_soft">#FF3A362E</color>
+
+    <color name="photo_grad_start">#FF4A4B3E</color>
+    <color name="photo_grad_end">#FF6B5B45</color>
+    <color name="avatar_grad_start">#FF3A3C33</color>
+    <color name="avatar_grad_end">#FF2C3229</color>
+    <color name="review_grad_start">#FF2E3A28</color>
+    <color name="review_grad_end">#FF3F5138</color>
+    <color name="scrim">#99000000</color>
+</resources>

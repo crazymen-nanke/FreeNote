@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 图标前景：纸白便签 + 折角 + 三行字迹 + 陶土落款点 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        android:width="108dp"
+        android:height="108dp"
+        android:viewportWidth="108"
+        android:viewportHeight="108">
+
+    <!-- 便签主体 -->
+    <path
+            android:fillColor="#F8F5F0"
+            android:pathData="M41,29 L64,29 L73,38 L73,73 A6,6 0 0 1 67,79 L41,79 A6,6 0 0 1 35,73 L35,35 A6,6 0 0 1 41,29 Z"/>
+
+    <!-- 折角 -->
+    <path
+            android:fillColor="#E2D9C9"
+            android:pathData="M64,29 L73,38 L64,38 Z"/>
+
+    <!-- 三行字迹 -->
+    <path
+            android:strokeColor="#A9BDA0"
+            android:strokeWidth="2.8"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000"
+            android:pathData="M43,45 L64,45"/>
+    <path
+            android:strokeColor="#A9BDA0"
+            android:strokeWidth="2.8"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000"
+            android:pathData="M43,53 L64,53"/>
+    <path
+            android:strokeColor="#A9BDA0"
+            android:strokeWidth="2.8"
+            android:strokeLineCap="round"
+            android:fillColor="#00000000"
+            android:pathData="M43,61 L57,61"/>
+
+    <!-- 落款点 -->
+    <path
+            android:fillColor="#D89575"
+            android:pathData="M63,71 A4.5,4.5 0 1 0 72,71 A4.5,4.5 0 1 0 63,71 Z"/>
+</vector>
